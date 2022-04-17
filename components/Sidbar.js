@@ -9,4 +9,4 @@ function Sidbar(){
     );
 }
 
-export default Sidbar; 
+export default Sidbar;
