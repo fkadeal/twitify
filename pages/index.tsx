@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import Sidbar from '../components/Sidbar'
+import Sidebar from '../components/Sidebar'
 import Head from 'next/head'
 import Image from 'next/image'
 
@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       </Head> 
 
       <main className="bg-black min-h-screen flex max-w-[1500px] mx-auto">
-        <Sidbar />
+        <Sidebar />
       </main>
     </div>
   )
