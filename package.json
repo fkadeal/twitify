@@ -6,6 +6,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emoji-mart/data": "^1.0.6",
+    "@emoji-mart/react": "^1.0.1",
     "@heroicons/react": "^1.0.6",
     "emoji-mart": "^5.2.2",
     "next": "latest",
