@@ -94,6 +94,7 @@ function Input() {
             </div>
 
             {showEmojis && (
+              <div className=' absolute mt-10  ml-80 '> 
               <Picker
                 onEmojiSelect={addEmoji}
                 previewPosition='bottom'
@@ -105,8 +106,9 @@ function Input() {
                   maxWidth: '320px',
                   borderRadius: '20px',
                 }}
-                // theme="dark"
+                theme="dark"
               />
+                </div> 
             )}
 
 
