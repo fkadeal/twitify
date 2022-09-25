@@ -1,8 +1,11 @@
-import { PhotographIcon, XIcon } from '@heroicons/react/solid'
-import { useRef, useState } from 'react'
+import { CalendarIcon, ChartBarIcon,EmojiHappyIcon, PhotographIcon, XIcon } from '@heroicons/react/solid'
+import { useRef, useState } from 'react' 
+import "emoji-mart/css/emoji-mart.css"
+import {picker } from "emoji-mart";
 function Input() {
   const [input, setInput] = useState('')
-  const [selectedFile, SetSelectedFile] = useState(null)
+  const [selectedFile, SetSelectedFile] = useState(null);
+  const [showEmojis, setShowEmojis] = useState(false);
   const filePickerRef = useRef(null)
 
   const addImageToPost = () => {}
@@ -49,7 +52,7 @@ function Input() {
 
         <div className="flex items-center justify-between pt-2.5 ">
           <div className="flex items-center">
-            <div className="icon">
+              <div className="icon">
               <PhotographIcon
                 className="h-[22px] text-[#1d9bf0]"
                 onClick={() => filePickerRef.current.click()}
@@ -61,6 +64,28 @@ function Input() {
                 ref={filePickerRef}
               />
             </div>
+            
+            <div className="icon rotate-90 ">
+              <ChartBarIcon 
+                className="h-[22px] text-[#1d9bf0]" 
+              /> 
+            </div>
+
+            <div className="icon  ">
+              <EmojiHappyIcon 
+                className="h-[22px] text-[#1d9bf0]"
+                onClick={() =>setShowEmojis(!showEmojis)}
+              /> 
+            </div>
+
+            <div className="icon">
+              <CalendarIcon 
+                className="h-[22px] text-[#1d9bf0]" 
+              /> 
+            </div>
+       
+
+
           </div>
         </div>
 
