@@ -98,14 +98,7 @@ function Input() {
               <Picker
                 onEmojiSelect={addEmoji}
                 previewPosition='bottom'
-                style={{
-                  position: 'absolute',
-                  marginTop: '465px',
-                  margin:'400px',
-                  marginLeft: -40,
-                  maxWidth: '320px',
-                  borderRadius: '20px',
-                }}
+               
                 theme="dark"
               />
                 </div> 
@@ -113,11 +106,12 @@ function Input() {
 
 
           </div>
-          <button className='bg-[#1d9bf0] text-white rounded-full px-4 py-1.5 font-bold show-md hover:bg-[#1a8cd8] disabled:cursor-default' >Tweet</button>
+          <button className='bg-[#1d9bf0] text-white rounded-full 
+          px-4 py-1.5 font-bold show-md
+           hover:bg-[#1a8cd8] disabled:cursor-default disabled:opacity-50' disabled={!input.trim() && !selectedFile} >Tweet</button>
         </div>
       </div>
     </>
   )
-}
-
+} 
 export default Input
